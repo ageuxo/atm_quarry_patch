@@ -1,7 +1,6 @@
 package io.github.ageuxo.ATMQuarryPatch;
 
 import com.mojang.logging.LogUtils;
-import com.thevortex.allthemodium.registry.ModRegistry;
 import net.minecraft.core.Registry;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
@@ -29,7 +28,7 @@ public class ATMQuarryPatch {
         public static void onBlockBreak(BlockEvent.BreakEvent event){
             BlockState state = event.getState();
             LOGGER.debug("{} {} {}", event.isCanceled(), event.getPlayer(), state);
-            if (state.is(BREAKABLE_TAGKEY) || state.is(ModRegistry.ALLTHEMODIUM_ORE.get()) || state.is(ModRegistry.ALLTHEMODIUM_SLATE_ORE.get()) || state.is(ModRegistry.VIBRANIUM_ORE.get()) || state.is(ModRegistry.UNOBTAINIUM_ORE.get())) {
+            if (state.is(BREAKABLE_TAGKEY)) {
                 event.setCanceled(false);
                 LOGGER.debug("{}", event.isCanceled());
             }
