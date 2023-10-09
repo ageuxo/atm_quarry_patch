@@ -29,7 +29,7 @@ displayName="ATM Ore Quarrying Patch" #mandatory
 # A file name (in the root of the mod JAR) containing a logo for display
 logoFile="examplemod.png" #optional
 # A text field displayed in the mod UI
-credits="Zeek for forcing me to make this at gun point, please send help" #optional
+credits="ZeekDaGeek for idea, GuntherDW for helpful insight" #optional
 # A text field displayed in the mod UI
 authors="ageuxo" #optional
 # Display Test controls the display for your mod in the server connection screen
