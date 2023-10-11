@@ -44,7 +44,7 @@ public class ATMQuarryPatch {
             }
             return fakePlayer;
         } else {
-            return Minecraft.getInstance().player;
+            return null;
         }
     }
 
