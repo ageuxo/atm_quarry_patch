@@ -44,7 +44,7 @@ public abstract class MixinAllthemodium_Ore extends RedStoneOreBlock {
                 target = "Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;strength(FF)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;" ),
             index = 0)
     private static float allTheModium_break_patch$getStrength(float p_60914_){
-        return 19;
+        return 3;
     }
 
 }
